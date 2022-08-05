@@ -14,9 +14,9 @@ PROMPT_SIGN='%{$reset_color%}%#'
 
 GIT_PROMPT_INFO='$(git_prompt_info)'
 
-# My current prompt looks like:
-# [host:current_dir] (git_prompt_info)
-# [username]%
+# Prompt looks like:
+# ┌─[host:current_dir] (git_prompt_info)
+# └─[username]%
 PROMPT="${PROMPT_STARTING_BRACKET}${PROMPT_BRACKET_BEGIN}${PROMPT_TIME}${PROMPT_BRACKET_END}${PROMPT_BRACKET_BEGIN}${PROMPT_HOST}${PROMPT_SEPARATOR}$PROMPT_DIR_VAR${PROMPT_DIR}${PROMPT_BRACKET_END}${GIT_PROMPT_INFO}
 $PROMPT_SECOND_STARTING_BRACKET${PROMPT_BRACKET_BEGIN}${PROMPT_USER}${PROMPT_BRACKET_END}${PROMPT_SIGN}"
 
