@@ -1,8 +1,11 @@
+#
 # VENV
+#
 function virtualenv_info {
     [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
 VENV_NAME='%{$fg_bold[cyan]%}$(virtualenv_info)%{$reset_color%}%'
+
 #
 # PROMPT
 #
